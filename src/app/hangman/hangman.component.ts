@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { words } from './words';
 
 @Component({
   selector: 'app-hangman',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hangman.component.scss']
 })
 export class HangmanComponent implements OnInit {
+
+  word = '';
+  hiddenWord = '';
+  guesses = 0;
+  won = false;
+  lost = false;
+
 
   constructor() { }
 
