@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { NavComponent } from './nav/nav.component';
+import { HangmanComponent } from './hangman/hangman.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    HangmanComponent
   ],
   imports: [
     BrowserModule,
