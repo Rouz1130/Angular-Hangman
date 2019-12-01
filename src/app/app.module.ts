@@ -9,11 +9,12 @@ import { MaterialModule } from './material/material.module';
 import { NavComponent } from './nav/nav.component';
 import { HangmanComponent } from './hangman/hangman.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HangmanComponent
+    HangmanComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background:#DCDCDC;
-}
-
-.hangman-img {
-  height: 200px;
+  background: #F5F5F5;
 }
 
 button {
@@ -17,4 +13,139 @@ button {
 
 .lost {
   color: #e20f15;
+}
+
+h1,
+.form-group,
+input {
+  color: #444;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6a27db !important;
+  border-color: #6a27db !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #e1d3f7 !important;
+  border-color: #e1d3f7 !important;
+}
+
+.mark,
+mark {
+  padding: .2em;
+  background-color: yellow;
+}
+
+
+
+.container {
+  position: relative;
+  max-width: 50rem;
+  margin: 7rem auto;
+  background: #fff;
+  width: 100%;
+  padding: 3rem 5rem 0;
+  border-radius: 1px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+  -webkit-transition: -webkit-transform 0.28s ease-in-out;
+  transition: -webkit-transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out, -webkit-transform 0.28s ease-in-out;
+  z-index: -1;
+}
+
+.container:hover::before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+.form-group {
+  position: relative;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+
+}
+
+.form-group .control-label {
+  position: absolute;
+
+}
+
+.form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #999;
+  display: block;
+}
+
+.form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #6a27db;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  font-size: 16px;
+  border-width: 0;
+  width: 100%;
+}
+
+.form-group input:valid~.control-label {
+  font-size: 0.8rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+
+.form-group input:focus {
+  outline: none;
+  color: #333;
+
+  .form-group input:focus~.control-label {
+    color: #6a27db;
+  }
+
+}
+
+// card
+.img-card {
+  max-width: 400px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+.tp-header-image {
+  background-image: url('./assets/img/bit-logo.jpg');
+  background-size: cover;
 }

@@ -14,7 +14,7 @@ import {
   MatCheckboxModule,
   MatToolbarModule,
   MatCardModule,
-  MatFormFieldModule,
+  // MatFormFieldModule,
   MatProgressSpinnerModule,
   MatInputModule
 } from '@angular/material';
@@ -26,6 +26,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   imports: [
