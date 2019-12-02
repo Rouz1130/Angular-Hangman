@@ -10,6 +10,7 @@ import { MaterialModule } from './material/material.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HangmanComponent } from './hangman/hangman.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HangmanComponent } from './hangman/hangman.component';
         AppComponent,
         NavComponent,
         HangmanComponent,
+        FooterComponent,
     ],
     imports: [
         BrowserModule,

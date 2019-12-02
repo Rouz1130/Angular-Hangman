@@ -3,21 +3,31 @@
    position: relative !important;
    bottom: 25px !important;
    font-size: 18px !important;
+   color: #6c757d;
  }
+
  ::placeholder {
- color: #cbcbcb;
- opacity: 4.5;
- font-size: 8px
+   color: #cbcbcb;
+   opacity: 4.5;
+   font-size: 8px
+ }
+.example-form {
+  width: 300px;
 }
 
-/*
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
+ /*
  uncomment for cross-browser with IE and firefox
 */
-// :-ms-input-placeholder { /* Internet Explorer 10-11 */
-// color: #cbcbcb;
-// font-size: 8px
-// }
-// ::-ms-input-placeholder { /* Microsoft Edge */
-// color: #cbcbcb;
-// font-size: 8px
-// }
+ // :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ // color: #cbcbcb;
+ // font-size: 8px
+ // }
+ // ::-ms-input-placeholder { /* Microsoft Edge */
+ // color: #cbcbcb;
+ // font-size: 8px
+ // }
+

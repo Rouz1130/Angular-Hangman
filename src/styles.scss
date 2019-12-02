@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #cccccc;
+  overflow: auto;
 }
 button {
   margin: 8px;
@@ -38,9 +39,10 @@ input {
   background-color: #e1d3f7 !important;
   border-color: #e1d3f7 !important;
 }
-.mark {
+.mark, mark{
   padding: .2em;
-  background-color: yellow;
+  background-color: #ffffed;
+  color: #6c757d;
 }
 .container {
   position: relative;
@@ -50,7 +52,7 @@ input {
   width: 100%;
   padding: 3rem 5rem 0;
   border-radius: 1px;
-  height: 53em;
+  height: 64em;
 }
 .form-group {
   position: relative;
@@ -79,10 +81,10 @@ input {
 }
 .form-group input,
 .form-group textarea {
-  display: block;
-  font-size: 16px;
-  border-width: 0;
+  font-size: 12px;
   width: 100%;
+  color: #6c757d;
+  border-radius: 4em;
 }
 .form-group input:valid~.control-label {
   font-size: 0.8rem;
@@ -99,10 +101,10 @@ input {
   }
 }
 
-// Hangman image
 .img-card {
   max-width: 400px;
   margin: 0 auto;
+  height: 21rem;
   float: none;
   margin-bottom: 10px;
 }
@@ -111,6 +113,13 @@ input {
   background-size: cover;
 }
 hr {
-  border: 2px solid #6f42c1;
   border-radius: 5px;
 }
+
+.label-block {
+  display: block;
+  margin-left: 5px;
+  font-size: 18px !important;
+  color: #6c757d;
+}
+
