@@ -1,29 +1,18 @@
 <div class="container">
   <form>
-      <div mat-card-avatar class="tp-header-image"></div>
-    <h1>Guess the word</h1>
-    <hr style=' border: 5px solid #6f42c1;
-    border-radius: 5px;'>
-    <!-- <div class=""> -->
-      <div class="row">
-        <div class="col text-center">
-          <h4>Attempts <small>{{tries}}/10</small></h4>
-          <h1><mark>{{hiddenWord}}</mark></h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <mat-card class="img-card">
-          <mat-card-header>
-            <mat-card-title>Attempts<small>{{ tries }} / 10</small></mat-card-title>
-            <mat-card-subtitle>HTML Basics</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <img mat-card-image src="assets/img/{{tries}}.jpg" alt="hangman-image">
-          </mat-card-content>
-        </mat-card>
-      </div>
-    <!-- </div> -->
+    <div mat-card-avatar class="tp-header-image"></div>
+    <div class="col text-center">
+      <strong>ATTEMPTS &nbsp;<mark>{{ tries }} / 10</mark></strong>
+      <h1><mark>{{hiddenWord}}</mark></h1>
+    </div>
+    <hr>
+    <div class="row">
+      <mat-card class="img-card">
+        <mat-card-content>
+          <img mat-card-image src="assets/img/{{tries}}.jpg" alt="hangman-image">
+        </mat-card-content>
+      </mat-card>
+    </div>
     <div class="row" *ngIf="win">
       <div class="col text-center">
         <h3 class="win">You Win!</h3>
@@ -41,13 +30,11 @@
     </div>
     <div class="button-container" *ngIf="!win && !lost">
       <div class="form-group">
-        <input (keyup)='onKey($event)'>
-        <label for="input" class="control-label">Guess a letter</label><i
-          class="bar"></i>
+        <input (keyup)='onKey($event)' placeholder="type a letter">
+        <label for="input" class="control-label"></label><i class="bar"></i>
       </div>
       <div class="col text-center">
-        <button class="btn btn-primary" id="btn-{{letter}}"
-          (click)="check(letter)" *ngFor="let letter of letters">
+        <button class="btn btn-primary" id="btn-{{letter}}" (click)="check(letter)" *ngFor="let letter of letters">
           {{letter}}
         </button>
       </div>

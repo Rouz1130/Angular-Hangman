@@ -1,0 +1,23 @@
+ strong {
+   font-weight: bolder !important;
+   position: relative !important;
+   bottom: 25px !important;
+   font-size: 18px !important;
+ }
+ ::placeholder {
+ color: #cbcbcb;
+ opacity: 4.5;
+ font-size: 8px
+}
+
+/*
+ uncomment for cross-browser with IE and firefox
+*/
+// :-ms-input-placeholder { /* Internet Explorer 10-11 */
+// color: #cbcbcb;
+// font-size: 8px
+// }
+// ::-ms-input-placeholder { /* Microsoft Edge */
+// color: #cbcbcb;
+// font-size: 8px
+// }
