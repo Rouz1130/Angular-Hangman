@@ -1,27 +1,36 @@
-# RouzBitTitanHangman
+# hangman
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+Implement the classic [Hangman
+game](<https://en.wikipedia.org/wiki/Hangman_(game)>) in Angular.
 
-## Development server
+## Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Generate a new **private** repo using this template repo.
+2. Provide your answers to your generated repo.
+3. Once your repo is ready for review, add `voleer-dev` as a collaborator for your repo.
+4. Wait for our response.
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Generate a random word for the player to guess
+- Provide a mechanism for the player to input their letter guesses
+- When the player guesses a letter it should reveal matching instances of
+  that letter in the word
+- The game is won if the player is able to correctly guess all of the letters
+  in the word before making 10 incorrect guesses
+- If the player has guessed 10 times without revealing the word, the game is
+  lost
 
-## Build
+The UI should include the following, but feel free to add more if you see the
+need or would like to get creative.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- A masked version of the word, with correct guesses revealed
+  - For example, if the word is “voleer” and the player has guessed the
+    letter “e” then the word should be displayed as: \_ \_ _ E E _
+- An input mechanism of some kind which allows the player to input their next guess
+- An indication of which letters the player has already guessed incorrectly
+- An indication of how many remaining incorrect guesses the player has before
+  the game is over
+- An indication of win/loss state when the game is over
+- The ability to start a new game once the game is over
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
