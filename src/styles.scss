@@ -1,125 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
-  background-color: #cccccc;
-  overflow: auto;
+    background-color: #cccccc;
+    overflow: auto;
 }
+
 button {
-  margin: 8px;
+    margin: 8px;
 }
+
 .win {
-  color: #18d455;
+    color: #18d455;
 }
+
 .lost {
-  color: #e20f15;
+    color: #e20f15;
 }
+
 h1,
 .form-group,
 input {
-  color: #444;
-  font-weight: bold;
-  font-size: 24px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+    color: #444;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
+
 .btn-primary {
-  color: #fff;
-  background-color: #6a27db !important;
-  border-color: #6a27db !important;
+    color: #fff;
+    background-color: #fff !important;
+    border-color: #6a27db !important;
+    color: black;
 }
+
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #fff;
-  background-color: #e1d3f7 !important;
-  border-color: #e1d3f7 !important;
+    color: #fff;
+    background-color: #e1d3f7 !important;
+    border-color: #e1d3f7 !important;
 }
+
 .btn-primary:hover {
-  color: #fff;
-  background-color: #e1d3f7 !important;
-  border-color: #e1d3f7 !important;
+    color: #fff;
+    background-color: #6a27db !important;
+    border-color: #6a27db !important;
 }
-.mark, mark{
-  padding: .2em;
-  background-color: #ffffed;
-  color: #6c757d;
+
+.mark,
+mark {
+    padding: .2em;
+    background-color: #ffffed;
+    color: #6c757d;
 }
+
 .container {
-  position: relative;
-  max-width: 50rem;
-  margin: 5rem auto;
-  background: #fff;
-  width: 100%;
-  padding: 3rem 5rem 0;
-  border-radius: 1px;
-  height: 64em;
+    position: relative;
+    max-width: 50rem;
+    margin: 5rem auto;
+    background: #fff;
+    width: 100%;
+    padding: 3rem 5rem 0;
+    border-radius: 1px;
+    height: 64em;
 }
+
 .form-group {
-  position: relative;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
+    position: relative;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
 }
+
 .form-group .control-label {
-  position: absolute;
+    position: absolute;
 }
+
 .form-group .bar {
-  position: relative;
-  border-bottom: 0.0625rem solid #999;
-  display: block;
+    position: relative;
+    border-bottom: 0.0625rem solid #999;
+    display: block;
 }
+
 .form-group .bar::before {
-  content: '';
-  height: 0.125rem;
-  width: 0;
-  left: 50%;
-  bottom: -0.0625rem;
-  position: absolute;
-  background: #6a27db;
-  -webkit-transition: left 0.28s ease, width 0.28s ease;
-  transition: left 0.28s ease, width 0.28s ease;
-  z-index: 2;
+    content: '';
+    height: 0.125rem;
+    width: 0;
+    left: 50%;
+    bottom: -0.0625rem;
+    position: absolute;
+    background: #6a27db;
+    -webkit-transition: left 0.28s ease, width 0.28s ease;
+    transition: left 0.28s ease, width 0.28s ease;
+    z-index: 2;
 }
+
 .form-group input,
 .form-group textarea {
-  font-size: 12px;
-  width: 100%;
-  color: #6c757d;
-  border-radius: 4em;
+    font-size: 12px;
+    width: 100%;
+    color: #6c757d;
+    border-radius: 4em;
 }
-.form-group input:valid~.control-label {
-  font-size: 0.8rem;
-  color: gray;
-  top: -1rem;
-  left: 0;
-}
-.form-group input:focus {
-  outline: none;
-  color: #333;
 
-  .form-group input:focus~.control-label {
-    color: #6a27db;
-  }
+.form-group input:valid~.control-label {
+    font-size: 0.8rem;
+    color: gray;
+    top: -1rem;
+    left: 0;
+}
+
+.form-group input:focus {
+    outline: none;
+    color: #333;
+    .form-group input:focus~.control-label {
+        color: #6a27db;
+    }
 }
 
 .img-card {
-  max-width: 400px;
-  margin: 0 auto;
-  height: 21rem;
-  float: none;
-  margin-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 21rem;
+    float: none;
+    margin-bottom: 10px;
 }
+
 .tp-header-image {
-  background-image: url('./assets/icons/purple-hangman.gif');
-  background-size: cover;
+    background-image: url('./assets/icons/ropeblue-hang.png');
+    background-size: cover;
 }
+
 hr {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .label-block {
-  display: block;
-  margin-left: 5px;
-  font-size: 18px !important;
-  color: #6c757d;
+    display: block;
+    margin-left: 5px;
+    font-size: 18px !important;
+    color: #6c757d;
 }
-

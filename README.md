@@ -1,14 +1,7 @@
 # hangman
 
-Implement the classic [Hangman
-game](<https://en.wikipedia.org/wiki/Hangman_(game)>) in Angular.
-
-## Instructions
-
-1. Generate a new **private** repo using this template repo.
-2. Provide your answers to your generated repo.
-3. Once your repo is ready for review, add `voleer-dev` as a collaborator for your repo.
-4. Wait for our response.
+- Classic hangman game; All guessed words are based of technolgy words
+- A player has a total of 10 guesses
 
 ## Requirements
 
@@ -33,4 +26,3 @@ need or would like to get creative.
   the game is over
 - An indication of win/loss state when the game is over
 - The ability to start a new game once the game is over
-

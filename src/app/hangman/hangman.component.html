@@ -1,47 +1,44 @@
 <div class="container">
-  <form>
-    <div mat-card-avatar class="tp-header-image"></div>
-    <div class="col text-center">
-      <strong>ATTEMPTS &nbsp;<mark>{{ tries }} / 10</mark></strong>
-      <h1><mark>{{hiddenWord}}</mark></h1>
-    </div>
-    <hr>
-    <div class="row">
-      <mat-card class="img-card">
-        <mat-card-content>
-          <img mat-card-image src="assets/img/{{tries}}.jpg" alt="hangman-image">
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <br>
-    <div class="row" *ngIf="win">
-      <div class="col text-center">
-        <h3 class="win">You Win!</h3>
-        <br>
-        <button class="btn btn-primary" (click)="reload()">Play Again</button>
-      </div>
-    </div>
-    <div class="row" *ngIf="lost">
-      <div class="col text-center">
-        <h3 class="lost">Game Over!</h3>
-        <h3 class="lost">The word was: <mark>{{word}}</mark></h3>
-        <button class="btn btn-primary" (click)="reload()">Try Again</button>
-      </div>
-    </div>
-    <div class="button-container" *ngIf="!win && !lost">
-        <div class="form-group">
-            <label class="label-block">Guess a letter</label>
-            <input
-            class="form-control form-control-inline form-control-large"
-            (keyup)='onKey($event)'
-            type="search"
-            placeholder="type your letter" />
+    <form>
+        <div mat-card-avatar class="tp-header-image"></div>
+        <div class="col text-center">
+            <strong>ATTEMPTS &nbsp;<mark>{{ tries }} / 10</mark></strong>
+            <h1><mark>{{hiddenWord}}</mark></h1>
         </div>
-      <div class="col text-center">
-        <button class="btn btn-primary" id="btn-{{letter}}" (click)="check(letter)" *ngFor="let letter of letters">
+        <hr>
+        <div class="row">
+            <mat-card class="img-card">
+                <mat-card-content>
+                    <img mat-card-image src="assets/img/{{tries}}.jpg" alt="hangman-image">
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <br>
+        <div class="row" *ngIf="win">
+            <div class="col text-center">
+                <h3 class="win">You Win!</h3>
+                <br>
+                <button class="btn btn-primary" (click)="reload()">Play Again</button>
+            </div>
+        </div>
+        <div class="row" *ngIf="lost">
+            <div class="col text-center">
+                <h3 class="lost">Game Over!</h3>
+                <h3 class="lost">The word was: <mark>{{word}}</mark></h3>
+                <button class="btn btn-primary" (click)="reload()">Try Again</button>
+            </div>
+        </div>
+        <div class="button-container" *ngIf="!win && !lost">
+            <div class="form-group">
+                <label class="label-block">Guess a letter</label>
+                <input class="form-control form-control-inline form-control-large" (keyup)='onKey($event)' type="search" placeholder="type your letter" />
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-primary" id="btn-{{letter}}" (click)="check(letter)" *ngFor="let letter of letters">
           {{letter}}
         </button>
-      </div>
-    </div>
-  </form>
+                <hr>
+            </div>
+        </div>
+    </form>
 </div>
